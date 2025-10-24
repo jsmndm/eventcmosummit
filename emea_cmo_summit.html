@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+    <h1 style="font-size: 3.0em; color: rgb(255,188,13); margin-bottom: 0.5em;">
+        EMEA CMO SUMMIT | 11-13 November 2025
+    </h1>
+    <h2 style="font-size: 2.0em; color: #2E86C1;">
+        Dubai - UAE
+    </h2>
+</div>
+<div>
+        <div id="logo" style="max-width:1300px; margin:auto;">
+        <img id="logoImage" src="EMEA CMO SUMMIT MLOGO.png" style="text-align:center; margin:5px 0;">
+        </div>
+
+    <style>
+        body { font-family: Speedee, speedee; margin: 20px; background: #fffbe6; }
+        h1, h2, h3 { color: rgb(255,188,13); }
+        .section { margin-bottom: 40px; }
+        .agenda-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+        .agenda-table th, .agenda-table td { border: 1px solid #d4af37; padding: 8px; text-align: left; }
+        .agenda-table th { background: #fffbe6; color: #d4af37; }
+        .social { background: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+        .dress-code { font-weight: bold; color: #2E86C1; }
+        .image { max-width: 100%; height: auto; margin-bottom: 20px; }
+        .travel-guide { background: #f4f8fb; padding: 15px; border-radius: 8px; }
+        .fun-facts { background: #f9f9f9; padding: 15px; border-radius: 8px; }
+	.event logistic poc { background: #f9f9f9; padding: 15px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+
+    <div class="section">
+        <h1>Marhaba!</h1>
+        <p>
+            Welcome to the vibrant city of Dubai for our <strong>CMO Summit</strong> this <strong>2025</strong>. We are delighted to have you with us for this exceptional gathering of great minds and talents across the EMEA BU.<br>
+	</p>
+	 
+  	<p> 
+	    Over the next 3 days, we will have in-depth discussions on strategies, best practices, and uncover actionable opportunities to Accelerate Feel-good Marketing, ensuring our brand continues to resonate with our audience.<br> 
+	    The summit will also highlight the MyMcDonald’s experience, as we explore innovative tactics to enhance customer engagement and loyalty through advanced personalization and technology—core elements in capturing and retaining our customers’ interest.<br>
+            Additionally, as we address the evolving market landscape, we will emphasize the importance of refining our approach and measurement processes to ensure our initiatives deliver tangible and lasting results.<br>
+	</p>
+	 <p> 
+            This summit is a celebration of creativity, strategic insights, and shared vision. We are eager to embark on this journey with you and craft the future of McDonald’s Marketing and make the Golden Arches standout in the EMEA region.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>EMEA CMO Summit: Agenda Overview</h2>
+        <p><strong>📍SLS Hotel – Dubai | 📅November 11 – 13, 2025</strong></p>
+        <ul>
+            <li><strong>Day 1:</strong> Feel-Good Marketing</li>
+            <li><strong>Day 2:</strong> Win with MyMcDonald’s</li>
+            <li><strong>Day 3:</strong> Elevating Strategy and Measurements</li>
+  	    
+	<span class="dress-code">Attire: come as you are</span>
+            </li>
+        </ul>
+
+    <div class="section social">
+        <h2>Social Gatherings</h2>
+        <ul>
+            <li><strong>Cocktail Reception</strong><br>
+                📅 November 10, 2025 |⏰7:00PM – 9:00PM<br>
+                📍SLS Hotel – S Bar Sky Lobby<br>
+                <span class="dress-code">Attire: come as you are</span>
+            </li>
+            <li><strong>Group Dinner</strong><br>
+                📅 November 10, 2025 |⏰7:00PM – 9:00PM<br>
+                📍African Queen – 1 Beach, Jumeira First, Jumeirah 1 – Dubai<br>
+                <span class="dress-code">🕺💃Attire: something bright</span>
+            </li>
+    </div>
+
+<div class="section">
+    <h2>Daily Agenda</h2>
+    <div id="gallery" style="max-width:700px; margin:auto;">
+        <img id="galleryImage" src="EMEA CMO Summit Day1.png" alt="Day 1 Agenda" style="width:100%; max-width:700px; height:auto; border-radiusesday 11 November 2025 - Feel-Good Marketing
+        </div>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:15px;">
+            <button onclick="prevImage()" style="padding:8px 16px; font-size:1em; border-radius:5px; border:1px solid #d4af37; background:#fffbe6; color:#d4af37;">Previous</button>
+            <button onclick="nextImage()" style="padding:8px 16px; font-size:1em; border-radius:5px; border:1px solid #d4af37; background:#fffbe6; color:#d4af37;">Next</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const images = [
+        {
+            src: "EMEA CMO Summit Day1.png",
+            caption: "Day 1: Tuesday 11 November 2025 - Feel-Good Marketing"
+        },
+        {
+            src: "EMEA CMO Summit Day2.png",
+            caption: "Day 2: Wednesday 12 November 2025 - Win with MyMcDonald's"
+        },
+        {
+            src: "EMEA CMO Summit Day3.png",
+            caption: "Day 3: Thursday 13 November 2025 - Elevating Strategy and Measurement"
+        }
+    ];
+    let currentIndex = 0;
+
+    function showImage(index) {
+        document.getElementById('galleryImage').src = images[index].src;
+        document.getElementById('galleryImage').alt = images[index].caption;
+        document.getElementById('caption').textContent = images[index].caption;
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    }
+
+    // Initialize gallery
+    showImage(currentIndex);
+</script>
+
+<style>
+    #galleryImage {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    @media (max-width: 600px) {
+        #gallery {
+            max-width: 100%;
+        }
+        #galleryImage {
+            max-width: 100%;
+        }
+        button {
+            font-size: 0.9em;
+            padding: 6px 12px;
+        }
+    }
+</style>
+   <div class="section fun-facts">
+    <h2> 🌟 Fun Facts About Dubai</h2>
+    <ul>
+        <li>Dubai is home to the Burj Khalifa, the tallest building in the world.</li>
+        <li>The Palm Jumeirah is a manmade island visible from space.</li>
+        <li>Dubai Mall is the world’s largest shopping mall, featuring over 1,200 shops and an indoor aquarium.</li>
+        <li>Over 200 nationalities live in Dubai, making it one of the most culturally diverse cities globally.</li>
+        <li>Dubai enjoys over 300 days of sunshine each year.</li>
+        <li>Dubai Frame offers panoramic views of old and new Dubai.</li>
+        <li>Dubai Creek is the cultural heart of the city, with traditional abras and flamingos.</li>
+        <li>Dubai’s hospitality is world-famous, with luxury hotels and unique experiences.</li>
+    </ul>
+    <p>Source: <a href="https://www.visitdubai.com/en/plan-your-trip">Visit Dubai</a>(https://www.visitdubai.com/en/plan-your-trip)</p
+</div>
+
+<div class="section travel-guide">
+    <h2>🗺️ Dubai Travel Guide</h2>
+    <ul>
+        <li><strong>Burj Khalifa</strong>: Tallest building, observation deck, open daily.</li>
+        <li><strong>Dubai Mall</strong>: Shopping, aquarium, ice rink, open 10 AM–12 AM.</li>
+        <li><strong>Dubai Frame</strong>: Iconic monument, panoramic views.</li>
+        <li><strong>Dubai Creek</strong>: Heritage area, traditional markets, boat rides.</li>
+        <li><strong>Museum of the Future</strong>: Futuristic exhibits, open daily.</li>
+        <li><strong>Palm Jumeirah</strong>: Beaches, restaurants, The View at The Palm.</li>
+        <li><strong>Al Fahidi Historical Neighbourhood</strong>: Traditional architecture, souks.</li>
+        <li><strong>Dubai Miracle Garden</strong>: Largest flower garden, seasonal hours.</li>
+    </ul>
+    <p>
+        <strong>Getting Around:</strong> Metro, taxis, ride-sharing apps.<br>
+        <strong>Currency:</strong> AED (Dirham), US$1 = AED3.67.<br>
+        <strong>Emergency:</strong> Police 999, Ambulance 998, Fire 997.<br>
+        <strong>Power:</strong> 220/240 volts, UK-style plugs.<br>
+        <strong>Free SIM card for tourists at the airport.</strong>
+    </p>
+    <p>Source: <a href="https://www.visitdubai.com/en/plan-your-trip">Visit Dubai</a>(https://www.visitdubai.com/en/plan-your-trip)</p
+
+
+<div class="section event logistic poc" style="b background: #f9f9f9; padding: 15px; border-radius: 8px; solid #d4af37; margin-top:40px;">
+    <h2 style="color: rgb(255,188,13);">📞 Event Logistic POC</h2>
+    <ul style="list-style:none; padding-left:0;">
+
+    <ul style="list-style:none; padding-left:0; font-size:1em;">
+        <li><strong>Bahar</strong> – Event Manager<br>
+            📧 <a href="mailto:baharyoksu@isttanbulturizm.com">baharyoksu@isttanbulturizm.com</a> | 📱 +90 532 297 9128
+        </li>
+        <li><strong>Jasmin Dayrit</strong> – EMEA Marketing Coordinator<br>
+            📧 <a href="mailto:jasmin.dayrit@apmea.mcd.com">jasmin.dayrit@apmea.mcd.com</a> | 📱 +971 56 533 0548
+    </ul>
+</div>
+
+</body>
+</html>
